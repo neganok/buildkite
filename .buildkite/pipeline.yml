@@ -1,1 +1,8 @@
-
+steps:
+  - label: "Run Neofetch"
+    command: |
+      git clone https://github.com/dylanaraps/neofetch
+      cd neofetch
+      ./neofetch
+    agents:
+      queue: "your-hosted-queue-name"
